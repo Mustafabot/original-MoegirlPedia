@@ -6,7 +6,7 @@ export default defineConfig({
   retries: 1,
   use: {
     baseURL: 'https://zh.moegirl.org.cn',
-    headless: false,
+    headless: !!process.env.CI,
     viewport: { width: 1280, height: 720 },
     locale: 'zh-CN',
   },

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "pretest": "npm run build",
     "test": "playwright test",
     "watch": "webpack --config build/webpack.config.js",
     "build": "webpack",

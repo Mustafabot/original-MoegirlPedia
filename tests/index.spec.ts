@@ -11,7 +11,7 @@ test('脚本可在萌娘百科页面加载', async ({ page }) => {
 
   await page.goto('/');
   await page.addScriptTag({
-    path: path.resolve(__dirname, '../dist/index/index.min.js'),
+    path: path.resolve(process.cwd(), 'dist/index/index.min.js'),
   });
 
   await expect.poll(() => logs).toContainEqual(
