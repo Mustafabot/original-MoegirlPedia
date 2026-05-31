@@ -1,1 +1,4 @@
-console.log('hello typescript');
+(function (): void {
+  const scriptName = 'original-moegirlpedia';
+  console.log(`${scriptName}: loaded`);
+})();
