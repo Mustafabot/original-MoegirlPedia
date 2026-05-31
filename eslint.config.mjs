@@ -1,8 +1,9 @@
 // @ts-check
 import js from '@eslint/js';
+import { defineConfig } from 'eslint/config';
 import tseslint from 'typescript-eslint';
 
-export default tseslint.config(
+export default defineConfig([
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
@@ -15,4 +16,4 @@ export default tseslint.config(
   {
     ignores: ['dist/', 'node_modules/', 'build/'],
   },
-);
+]);
